@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="kago_gateway" method="upgrade">
+	
+	<name>Kago Gatway Plugin - gateway</name>
+	<author>Adam Stephen Docherty</author>
+	<creationDate>August 2011</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@corephp.com</authorEmail>
+	<authorUrl>www.corephp.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Kago Gatway Plugin - gateway</description>
+	
+	<files>
+		<filename plugin="gateway">gateway.php</filename>
+		<folder>gateway</folder>
+	</files>
+	
+	<languages>
+			<language tag="en-GB">gateway/en-GB.plg_kago_gateway_gateway.ini</language>
+	</languages>
+						
+	<params>
+		
+		<param name="store_id" type="text" size="30" default="" label="KAGO_LP_STOREID" description="KAGO_LP_STOREID_DESC" />
+		<param name="check_cvv2" type="radio" default="1" label="KAGO_LP_CHECK_CVV2" description="KAGO_LP_CHECK_CVV2_DESC"> 
+		  <option value="0">No</option> 
+		  <option value="1">Yes</option> 
+		</param>
+		
+	</params>
+	
+</install>
